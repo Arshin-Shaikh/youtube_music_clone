@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="https://music.youtube.com/favicon.ico" sizes="16x16" type="image/x-icon">
+</head>
+
+<body>
+    <section class="main flex-hor">
+
+        <!-- RIGHT CONTAINER -->
+
+        <div class="right-container">
+
+            <header>
+                <nav class="navbar1 flex-hor">
+
+                    <div class="right-content flex-hor bottom-border">
+
+                        <div class="humburge circle">
+                            <button class="hum-btn">
+                                <img src="images/humburge.svg" class="icon" alt="Menu">
+                            </button>
+                        </div>
+
+                        <div class="logo">
+                            <img src="https://music.youtube.com/img/on_platform_logo_dark.svg" alt="YouTube Music Logo">
+                        </div>
+
+                    </div>
+
+                </nav>
+            </header>
+
+            <main class="sidebar right-border">
+                <div class="humburge-main">
+                    <!-- HOME SECTION -->
+
+                    <div class="home-section">
+
+                        <div class="sidebar-buttons flex-ver">
+
+                            <button class="sidebar-btn active">
+                                <img src="images/home.svg" class="icon" alt="">
+                                <span>Home</span>
+                            </button>
+
+                            <button class="sidebar-btn">
+                                <img src="images/explore.svg" class="icon" alt="">
+                                <span>Explore</span>
+                            </button>
+
+                            <button class="sidebar-btn">
+                                <img src="images/bookMark.svg" class="icon" alt="">
+                                <span>Library</span>
+                            </button>
+
+                            <button class="sidebar-btn">
+                                <img src="images/updates.svg" class="icon" alt="">
+                                <span>Updates</span>
+                            </button>
+
+                            <div class="line"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="library-section">
+
+                        <div class="library-heading">
+
+                            <button class="add-button">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <h3>New Playlist</h3>
+
+                        </div>
+
+                        <div class="playlist-albums sidebar-buttons flex-ver">
+
+                            <!-- LIKED SONGS -->
+
+                            <button class=" like-song-btn library-song-btn hovering-effect">
+
+                                <div class="liked-song">
+
+                                    <div class="song-name flex-hor">
+                                        <img src="images/like.svg" class="icon" alt="like-icon">
+                                        <span class="song-title">Liked songs</span>
+                                    </div>
+
+                                    <span class="song-subtitle">Auto playlist</span>
+
+                                </div>
+
+                                <div class="library-play opacity-transition">
+                                    <img src="images/playCircle.svg" alt="Play" class="icon">
+                                </div>
+
+                            </button>
+
+                            <ul class="folderList"></ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+
+        <!-- LEFT CONTAINER -->
+
+        <div class="left-container">
+
+            <header>
+
+                <nav class="navbar1 flex-hor bottom-border">
+
+                    <div class="middle-content flex-hor">
+
+                        <div class="search-container flex-hor">
+
+                            <div class="search-icon">
+                                <button class="search-button">
+                                    <img src="images/search.svg" class="icon" alt="Search">
+                                </button>
+                            </div>
+
+                            <div class="search-bar">
+                                <input type="text" class="search-input"
+                                    placeholder="Search songs, albums, artists, podcasts">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="left-content flex-hor">
+
+                        <div class="btn-container flex-hor">
+
+                            <button class="upload-button" aria-label="Connect device">
+                                <img src="images/deviceLink.svg" class="icon" alt="">
+                            </button>
+
+                            <div class="username circle">
+
+                                <img src="images/placeholder.svg" class="user-profile circle" alt="User profile">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+
+            </header>
+
+        </div>
+
+
+
+        <section class="playbar-section flex-ver">
+            <div class="playbar1">
+                <div class="seekbar">
+                    <div class="progress"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="playbar-container">
+                <div class="playbar-right flex-hor">
+                    <div class="prev-container">
+                        <button class="prev-btn playbar-btn">
+                            <img src="images/previous.svg" class="icons" alt="previous">
+                        </button>
+                    </div>
+                    <div class="play-container">
+                        <button class="play-btn playbar-btn">
+                            <img src="images/play.svg" class="icons" alt="play">
+                        </button>
+                    </div>
+                    <div class="next-container">
+                        <button class="next-btn playbar-btn">
+                            <img src="images/next.svg" class="icons" alt="next">
+                        </button>
+                    </div>
+                </div>
+                <div class="playbar-middle">
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/filter.js"></script>
+
+</body>
+
+</html>

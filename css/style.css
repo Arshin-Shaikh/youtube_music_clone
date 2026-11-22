@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --a: 28vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #030303;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #030303;
+    
+}
+
+/* RIGHT CONTAINER */
+
+.right-container {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.navbar1 {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right-content {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    padding-left: 20px;
+}
+
+.humburge {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hum-btn {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo {
+    width: 110px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* LEFT CONTAINER */
+
+.left-container {
+    flex: 1;
+    min-width: 0;
+    height: 100vh;
+}
+
+.left-container header {
+    width: 100%;
+}
+
+/* SEARCH SECTION */
+
+.middle-content {
+    width: 75%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-container {
+    width: 65%;
+    max-width: 650px;
+    height: 42px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #212121;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: border 0.2s ease;
+}
+
+.search-container:focus-within {
+    border-color: #777;
+    background-color: #292929;
+}
+
+.search-icon {
+    width: 55px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.search-button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    height: 100%;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+/* LEFT CONTENT */
+
+.left-content {
+    width: 25%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    padding-right: 25px;
+}
+
+.upload-button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.upload-button:hover,
+.humburge:hover {
+    background-color: #272727;
+}
+
+.username {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.username img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ICONS */
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
+.sidebar {
+    width: 240px;
+    height: calc(100vh - 64px);
+    padding: 12px 12px;
+    background-color: #030303;
+}
+
+.humburge-main {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* HOME SECTION */
+
+.home-section {
+    width: 100%;
+}
+
+.sidebar-buttons {
+    width: 100%;
+    gap: 5px;
+}
+
+.sidebar-btn {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0 16px;
+
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+    text-align: left;
+
+    transition: background 0.2s ease;
+
+}
+
+.sidebar-btn:hover {
+    background-color: #272727;
+}
+
+.sidebar-btn.active {
+    background-color: #272727;
+}
+
+/* SIDEBAR ICONS */
+
+.sidebar-btn img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* DIVIDER */
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #303030;
+    margin: 16px 0;
+}
+
+.library-section {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.library-heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 28px;
+    margin-bottom: 8px;
+    background-color: #212121;
+    border-radius: 25px;
+    max-height: 2.25rem;
+}
+
+.library-heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.add-button {
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+}
+
+.add-button:hover {
+    background-color: #303030;
+}
+
+.song-name {
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.library-song-btn {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+    text-align: left;
+
+    transition: background 0.2s ease;
+}
+
+.library-song-btn:hover{
+     background-color: #272727;
+}
+
+.song-subtitle {
+    font-family: "Inter", sans-serif;;
+    font-size: 12px;
+    color:#aaa;
+}
+
+.playlist-albums{
+    max-height: var(--a);
+    overflow-y: auto;
+    scrollbar-color: rgb(68, 68, 68) transparent;
+}
+
+.playbar-section {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* --a : 40vh; */
+    width: 100%;
+    height: 12vh;
+    background-color: #212121;
+   
+}
+
+.playbar1 {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background: #212121;
+    height: 4px;
+}
+
+.seekbar {
+    width: 100%;
+    height: 2px;
+    background: #555;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: red;
+    border-radius: 10px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.seekbar:hover .circle {
+    opacity: 1;
+}
+
+.playbar-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom:0;
+    padding: 0 10px;
+}
+
+.playbar-right{
+    width: 15vw;
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.prev-container , .next-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playbar-btn{
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    padding: 2px;
+}
+
+.playbar-btn:hover{
+    background-color: #707070;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .right-container {
+        width: 180px;
+    }
+
+    .middle-content {
+        width: 75%;
+        padding: 0 10px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .left-content {
+        width: 25%;
+    }
+
+    .btn-container {
+        padding-right: 10px;
+        gap: 8px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .right-container {
+        width: auto;
+    }
+
+    .right-content {
+        padding-left: 10px;
+        gap: 8px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .middle-content {
+        flex: 1;
+        width: auto;
+        padding: 0 8px;
+    }
+
+    .search-container {
+        height: 38px;
+    }
+
+    .search-icon {
+        width: 38px;
+    }
+
+    .search-input {
+        font-size: 12px;
+    }
+
+    .left-content {
+        width: auto;
+    }
+
+    .upload-button {
+        display: none;
+    }
+
+    .btn-container {
+        padding-right: 10px;
+    }
+
+}
