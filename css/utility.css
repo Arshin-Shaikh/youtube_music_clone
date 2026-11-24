@@ -52,3 +52,11 @@
 .hovering-effect:hover .opacity-transition {
     opacity: 1;
 }
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}

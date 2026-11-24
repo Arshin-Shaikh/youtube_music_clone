@@ -2,7 +2,7 @@ console.log("initializing script.js");
 
 async function songDisplay() {
     try {
-        let songFile = await fetch('http://127.0.0.1:5500/songs/');
+        let songFile = await fetch('./songs/');
         let response = await songFile.text();
         let div = document.createElement("div");
         div.innerHTML = response;

@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
-    <link rel="icon"
-    href="https://music.youtube.com/favicon.ico"
-    sizes="16x16"
-    type="image/x-icon">
+    <link rel="icon" href="https://music.youtube.com/favicon.ico" sizes="16x16" type="image/x-icon">
 </head>
 
 <body>
@@ -183,25 +180,57 @@
                 </div>
             </div>
             <div class="playbar-container">
-                <div class="playbar-right flex-hor">
-                    <div class="prev-container">
-                        <button class="prev-btn playbar-btn">
-                            <img src="images/previous.svg" class="icons" alt="previous">
-                        </button>
+                <div class="playbar-right  flex-hor align-center">
+                    <div class="playbar-controls flex-hor">
+                        <div class="prev-container">
+                            <button class="prev-btn playbar-btn">
+                                <img src="images/previous.svg" class="icons" alt="previous">
+                            </button>
+                        </div>
+                        <div class="play-container">
+                            <button class="play-btn playbar-btn">
+                                <img src="images/play.svg" class="icons" alt="play">
+                            </button>
+                        </div>
+                        <div class="next-container">
+                            <button class="next-btn playbar-btn">
+                                <img src="images/next.svg" class="icons" alt="next">
+                            </button>
+                        </div>
                     </div>
-                    <div class="play-container">
-                        <button class="play-btn playbar-btn">
-                            <img src="images/play.svg" class="icons" alt="play">
-                        </button>
-                    </div>
-                    <div class="next-container">
-                        <button class="next-btn playbar-btn">
-                            <img src="images/next.svg" class="icons" alt="next">
-                        </button>
+
+                    <div class="play-duration flex-hor align-center">
+                        <span>0:00/0:00</span>
                     </div>
                 </div>
-                <div class="playbar-middle">
+                <div class="playbar-middle flex-hor align-center">
 
+                    <div class="song-info flex-hor align-center">
+                        <div class="song-cover">
+                            <img src="songs/anime/gojo/gojo.jpg" alt="cover.jpg">
+                        </div>
+                        <div class="song-des flex-ver">
+                            <h2>title</h2>
+                            <span>description</span>
+                        </div>
+                    </div>
+                    <div class="song-btns">
+                        <button class="thumbs-up circle1">
+                            <img src="images/thumbsup.svg" alt="liked">
+                        </button>
+                        <button class="thumbs-down circle1" >
+                            <img src="images/thumbsdown.svg" alt="disliked">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="playbar-left flex-hor align-center">
+                    <div class="slidingbutton"></div>
+                    <div class="sliderbutton">
+                        <button class="leftslider circle1">
+                            <img src="images/left.svg" alt="left">
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
