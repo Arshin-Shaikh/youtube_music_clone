@@ -60,3 +60,27 @@
 .align-center {
     align-items: center;
 }
+
+.p2{
+    padding: 0px 10px;
+}
+
+.font-small{
+    font-size: 14px;
+}
+
+.font-medium{
+    font-size: 16px;
+}
+
+.font-large{
+    font-size: 24px;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}

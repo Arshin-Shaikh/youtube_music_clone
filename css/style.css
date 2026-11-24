@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --a: 28vh;
+    --a: 30vh;
 }
 
 * {
@@ -434,11 +434,11 @@ body {
     height: 10vh;
     position: absolute;
     bottom:0;
-    padding: 0 10px;
+    
 }
 
 .playbar-right{
-    width: 23vw;
+    width: 23%;
     height: 80%;
     justify-content: space-between;
 }
@@ -448,6 +448,7 @@ body {
     height: 90%;
     justify-content: space-between;
     text-align: center;
+    padding: 0 10px;
 }
 
 .prev-container , .next-container, .play-container{
@@ -462,7 +463,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     border: none;
-    padding: 2px;
+    padding: 5px;
 }
 
 .playbar-btn:hover{
@@ -470,14 +471,14 @@ body {
 }
 
 .playbar-middle{
-    width: 65%;
+    width: 55%;
     height: 80%;
     justify-content: center;
     gap: 20px;
 }
 
 .song-info {
-    width: 35%;
+    width: 45%;
     height: 100%;
     justify-content: space-evenly;
 }
@@ -493,6 +494,36 @@ body {
    width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.song-btns{
+    width: 15%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.playbar-left{
+    width: 23%;
+    height: 80%;
+}
+
+.slidingbutton{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.volume-range{
+    width: 70%;
+    max-height: 3px;
+}
+
+.slidingbutton{
+   transition: all 0.9s ease;
+}
+
+.dynamic-slider{
+    transform: translateX(290px);
 }
 
 /* RESPONSIVE DESIGN */

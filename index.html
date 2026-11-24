@@ -7,7 +7,6 @@
     <title>YouTube Music</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utility.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
     <link rel="icon" href="https://music.youtube.com/favicon.ico" sizes="16x16" type="image/x-icon">
 </head>
 
@@ -77,7 +76,7 @@
                         <div class="library-heading">
 
                             <button class="add-button">
-                                <i class="fa-solid fa-plus"></i>
+                                <span class="font-large">+</span>
                             </button>
 
                             <h3>New Playlist</h3>
@@ -209,25 +208,39 @@
                         <div class="song-cover">
                             <img src="songs/anime/gojo/gojo.jpg" alt="cover.jpg">
                         </div>
-                        <div class="song-des flex-ver">
-                            <h2>title</h2>
-                            <span>description</span>
+                        <div class="song-des flex-ver ">
+                            <h2 class="p2 font-medium">title</h2>
+                            <span class="p2 font-small">description</span>
                         </div>
                     </div>
-                    <div class="song-btns">
-                        <button class="thumbs-up circle1">
+                    <div class="song-btns flex-hor align-center">
+                        <button class="thumbs-up playbar-btn icons circle1">
                             <img src="images/thumbsup.svg" alt="liked">
                         </button>
-                        <button class="thumbs-down circle1" >
+                        <button class="thumbs-down playbar-btn icons circle1">
                             <img src="images/thumbsdown.svg" alt="disliked">
                         </button>
                     </div>
 
                 </div>
-                <div class="playbar-left flex-hor align-center">
-                    <div class="slidingbutton"></div>
-                    <div class="sliderbutton">
-                        <button class="leftslider circle1">
+                <div class="playbar-left flex-hor align-center justify-end">
+                    <div class="slidingbutton">
+                        <div class="volume flex-hor align-center justify-between">
+                            <input type="range" min="1" max="100" value="50" class="volume-range" id="volumeRange">
+                            <button class="volume-btn playbar-btn icons circle1">
+                                <img src="images/volume.svg" alt="volume">
+                            </button>
+                        </div>
+
+                        <button class="shuffle playbar-btn icons circle1">
+                            <img src="images/shuffle.svg" alt="shuffle">
+                        </button>
+                        <button class="repeat playbar-btn icons circle1">
+                            <img src="images/repeat.svg" alt="repeat">
+                        </button>
+                    </div>
+                    <div class="sliderbutton ">
+                        <button class="leftslider playbar-btn icons circle1">
                             <img src="images/left.svg" alt="left">
                         </button>
                     </div>
