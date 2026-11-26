@@ -29,7 +29,7 @@ body {
     flex-shrink: 0;
 }
 
-.navbar1 {
+.navbar {
     height: 64px;
     width: 100%;
     display: flex;
@@ -40,7 +40,6 @@ body {
     width: 100%;
     height: 100%;
     justify-content: flex-start;
-    align-items: center;
     gap: 22px;
     padding-left: 20px;
 }
@@ -48,9 +47,6 @@ body {
 .hamburger {
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
@@ -60,15 +56,12 @@ body {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    border-radius: 50%;
 }
 
 .logo {
     width: 110px;
     height: 100%;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .logo img {
@@ -95,7 +88,6 @@ body {
     width: 75%;
     height: 100%;
     justify-content: flex-start;
-    align-items: center;
     padding: 0 20px;
 }
 
@@ -220,6 +212,12 @@ body {
     height: calc(100vh - 64px);
     padding: 12px 12px;
     background-color: #030303;
+    transition: width 0.9s ease;
+}
+
+.effect{
+    width: 34%;
+    transition: width 0.9s ease;
 }
 
 .humburge-main {
@@ -240,27 +238,30 @@ body {
 }
 
 .sidebar-btn {
+    display: flex;
     width: 100%;
     height: 48px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 20px;
     padding: 0 16px;
-
     background: transparent;
     border: none;
     border-radius: 8px;
-
     color: #fff;
     font-size: 14px;
     font-weight: 500;
-
     cursor: pointer;
     text-align: left;
-
     transition: background 0.2s ease;
+}
 
+.sidebar .sidebar-btn.hamburger-effect {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    font-size: 10px;
 }
 
 .sidebar-btn:hover {
