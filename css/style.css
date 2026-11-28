@@ -47,7 +47,6 @@ body {
 .hamburger {
     width: 40px;
     height: 40px;
-    position: relative;
 }
 
 .ham-btn {
@@ -177,10 +176,10 @@ body {
     transition: background 0.2s ease;
 }
 
-.upload-button:hover,
+/* .upload-button:hover,
 .humburge:hover {
     background-color: #272727;
-}
+} */
 
 .username {
     width: 36px;
@@ -262,14 +261,6 @@ body {
     gap: 5px;
     padding: 5px;
     font-size: 10px;
-}
-
-.sidebar-btn:hover {
-    background-color: #272727;
-}
-
-.sidebar-btn.active {
-    background-color: #272727;
 }
 
 /* SIDEBAR ICONS */
@@ -357,10 +348,6 @@ body {
     text-align: left;
 
     transition: background 0.2s ease;
-}
-
-.library-song-btn:hover{
-     background-color: #272727;
 }
 
 .song-subtitle {
@@ -452,13 +439,6 @@ body {
     padding: 0 10px;
 }
 
-.prev-container , .next-container, .play-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .playbar-btn{
     background-color: transparent;
     border-radius: 50%;
@@ -469,6 +449,10 @@ body {
 
 .playbar-btn:hover{
     background-color: #707070;
+}
+
+.playbar-btn:focus-visible{
+    outline: none;
 }
 
 .playbar-middle{
@@ -485,10 +469,11 @@ body {
 }
 
 .song-cover{
+     width: 71px;
     height: 40px;
-    width: auto;
-    border-radius: 2px;
+    flex-shrink: 0;
     overflow: hidden;
+    border-radius: 2px;
 }
 
 .song-cover img{
@@ -509,9 +494,10 @@ body {
 }
 
 .slidingbutton{
-    display: flex;
+   display: flex;
     justify-content: space-between;
     width: 80%;
+    transition: transform 0.3s ease;
 }
 
 .volume-range{
@@ -519,14 +505,18 @@ body {
     max-height: 3px;
 }
 
-.slidingbutton{
-   transition: all 0.9s ease;
-}
-
 .dynamic-slider{
     transform: translateX(290px);
 }
 
+
+.library-song-btn:hover,
+.sidebar-btn:hover,
+.sidebar-btn.active ,
+.upload-button:hover,
+.ham-btn:hover {
+    background-color: #272727;
+}
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 768px) {
